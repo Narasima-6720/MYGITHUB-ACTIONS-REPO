@@ -2,7 +2,9 @@ name: This is default runner for github actions
 on: push
 jobs:
   mycicd:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    # runs-on: ubuntu-latest
+    
     steps:
       - name: Display the message
         run: echo "Hello from Narasimha reddy"
