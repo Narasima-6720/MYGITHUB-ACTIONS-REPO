@@ -6,5 +6,8 @@ jobs:
     # runs-on: ubuntu-latest
     
     steps:
+      - name: Checkout the code from SCM
+        uses: actions/checkout@v4
+        
       - name: Display the message
         run: echo "Hello from Narasimha reddy"
